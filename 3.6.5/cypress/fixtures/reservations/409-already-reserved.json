@@ -1,0 +1,4 @@
+{
+    "error": "ALREADY_RESERVED",
+    "message": "A reservation already exists for this course offering."
+}

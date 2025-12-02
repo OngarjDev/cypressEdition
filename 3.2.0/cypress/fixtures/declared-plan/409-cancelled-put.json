@@ -1,0 +1,4 @@
+{
+    "error": "CANCELLED_DECLARED_PLAN", 
+    "message": "Cannot update the declared plan because it has been cancelled."
+}
