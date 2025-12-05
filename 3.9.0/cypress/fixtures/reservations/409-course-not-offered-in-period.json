@@ -1,0 +1,4 @@
+{
+    "error": "COURSE_NOT_OFFERRED_IN_PERIOD",
+    "message": "This course offering is not in the same semester as the current reservation period."
+}

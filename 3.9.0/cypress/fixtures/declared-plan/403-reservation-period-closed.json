@@ -1,0 +1,4 @@
+{
+    "error": "RESERVATION_PERIOD_CLOSED",
+    "message": "Cannot perform this action because the reservation period is currently closed."
+}
