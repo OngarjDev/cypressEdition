@@ -1,0 +1,4 @@
+{
+    "error": "CANCELLED_DECLARED_PLAN", 
+    "message": "Cannot cancel the declared plan because it is already cancelled."
+}

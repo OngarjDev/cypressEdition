@@ -1,0 +1,4 @@
+{
+    "error": "CREDIT_LIMIT_EXCEEDED",
+    "message": "Reserving this course would exceed the cumulative credit limit for the current reservation period."
+}

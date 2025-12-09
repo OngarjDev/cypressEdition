@@ -1,0 +1,4 @@
+{
+    "error": "ALREADY_DECLARED",
+    "message": "A declaration already exists for this student."
+}

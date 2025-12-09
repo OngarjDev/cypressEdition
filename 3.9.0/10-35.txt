@@ -1,0 +1,1669 @@
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        15.7.1                                                                         │
+  │ Browser:        Electron 138 (headless)                                                        │
+  │ Node Version:   v22.18.0 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          17 found (sprint-1/tc-pbi1-1.cy.js, sprint-1/tc-pbi1-2.cy.js, sprint-1/tc-pbi1 │
+  │                 -3.cy.js, sprint-4/1_tc-pbi11.cy.js, sprint-4/2_tc-pbi9.cy.js, sprint-4/3_tc-p │
+  │                 bi10.cy.js, sprint-2/tc-pbi2-1.cy.js, sprint-2/tc-pbi3-1.cy.js, sprint-2/tc-pb │
+  │                 i3-2.cy.js, sprint-2/tc...)                                                    │
+  │ Searched:       cypress/e2e/**/*.cy.js                                                         │
+  │ Experiments:    experimentalRunAllSpecs=true                                                   │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-1/tc-pbi1-1.cy.js                                                       (1 of 17)
+
+
+  TC-PBI1-1 : VIEW-PLAN-LIST
+
+          normal : - the system operates normally
+
+                   - study_plans table is empty
+    √ The page should request the backend server that include 'bscit.sit.kmutt.ac.th' and end with '/v1/study-plans' (906ms)
+    √ The page should show empty table with headers: ID,Study Code, English Name, Thai Name. (658ms)
+
+
+  2 passing (6s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     sprint-1/tc-pbi1-1.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-1/tc-pbi1-2.cy.js                                                       (2 of 17)
+
+
+  TC-PBI1-2 : VIEW-PLAN-LIST
+
+          normal : - study_plans table has 9 records
+    √ The page should show study plans table with headers (ID, Study Code, English Name, Thai Name) and 9 entries. (613ms)
+    √ The page should show study plans in the following order: FE, BE, FS, AI, DS, DA, DE, DB, UX. (1015ms)
+
+
+  2 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     sprint-1/tc-pbi1-2.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-1/tc-pbi1-3.cy.js                                                       (3 of 17)
+
+
+  TC-PBI1-3 : VIEW-PLAN-LIST
+
+          failed : - the system fails to fetch study plans
+    1) [step 3] The page should show empty table with headers: ID,Study Code, English Name, Thai Name.
+
+        The dialog should be shown with the message "There is a problem. Please try again later."
+    2) [step 4] Dialog should have attribute closedby="none"
+    3) Repeat step 2 with mock response = 401 Unauthorized.
+
+
+  0 passing (18s)
+  3 failing
+
+  1) TC-PBI1-3 : VIEW-PLAN-LIST
+
+          failed : - the system fails to fetch study plans
+       [step 3] The page should show empty table with headers: ID,Study Code, English Name, Thai Name.
+
+        The dialog should be shown with the message "There is a problem. Please try again later.":
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'An unexpected error occurred on the server.'
+      +'There is a problem. Please try again later.'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-1/tc-pbi1-3.cy.js:27:47)
+
+  2) TC-PBI1-3 : VIEW-PLAN-LIST
+
+          failed : - the system fails to fetch study plans
+       [step 4] Dialog should have attribute closedby="none":
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'An unexpected error occurred on the server.'
+      +'There is a problem. Please try again later.'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-1/tc-pbi1-3.cy.js:45:54)
+
+  3) TC-PBI1-3 : VIEW-PLAN-LIST
+
+          failed : - the system fails to fetch study plans
+       Repeat step 2 with mock response = 401 Unauthorized.:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'An unexpected error occurred on the server.'
+      +'There is a problem. Please try again later.'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-1/tc-pbi1-3.cy.js:65:54)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      3                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  3                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     18 seconds                                                                       │
+  │ Spec Ran:     sprint-1/tc-pbi1-3.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-1\tc-     (1280x720)
+     pbi1-3.cy.js\TC-PBI1-3  VIEW-PLAN-LIST          failed  - the system fails to fe               
+     tch study plans -- [step 3] The page should show empty table with headers ID,Stu               
+     dy Code, English Name, Thai Name.        The dialog should be shown with the mes               
+     sage There is a problem.png                                                                    
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-1\tc-     (1280x720)
+     pbi1-3.cy.js\TC-PBI1-3  VIEW-PLAN-LIST          failed  - the system fails to fe               
+     tch study plans -- [step 4] Dialog should have attribute closedby=none (failed).               
+     png                                                                                            
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-1\tc-     (1280x720)
+     pbi1-3.cy.js\TC-PBI1-3  VIEW-PLAN-LIST          failed  - the system fails to fe               
+     tch study plans -- Repeat step 2 with mock response = 401 Unauthorized (failed).               
+     png                                                                                            
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-4/1_tc-pbi11.cy.js                                                      (4 of 17)
+
+
+  PBI11 : RESTRICT-RESERVATION-PERIOD
+    √ Pre-condition: Must be itb-ecors public URL (578ms)
+    √ TC-PBI11-1 : • five second before startDateTime of the first period – closed / next (6413ms)
+    1) TC-PBI11-2 : • at startDateTime of the first period – open / next
+    2) TC-PBI11-3 : • five second before endDateTime of the first period – open / next
+    3) TC-PBI11-4 : • one second after endDateTime of the first period – closed / next
+    4) TC-PBI11-5 : • In the middle of second period – open / none
+    5) TC-PBI11-6 : • one second after endDateTime of the second period – closed / none
+    6) TC-PBI11-7 : • after endDate of 2025S1 but before startDate of 2025S2 – closed / next
+    7) TC-PBI11-8 : • at startDateTime of 2025S2 – closed / next
+    8) TC-PBI11-9 : error
+                • Perform action after the reservation period is closed
+                • Declare – failed
+    9) TC-PBI11-10 : error
+                • Perform action after the reservation period is closed
+                • Change – failed
+    10) TC-PBI11-11 : error
+                • Perform action after the reservation period is closed
+                • Cancel – failed
+    11) TC-PBI11-12 : • Client time is slower than server by 5 seconds
+                      • Declare – success
+                      • Change – success
+                      • Cancel – success
+    12) TC-PBI11-13 : error
+                       • Client time is slower than server by 5 seconds
+                       • Declare – failed
+    13) TC-PBI11-14 : error
+                            • Client time is slower than server by 5 seconds
+                            • Change – failed
+    14) TC-PBI11-15 : error
+                            • Client time is slower than server by 5 seconds
+                            • Cancel – failed
+    15) TC-PBI11-16 : error
+                        • Client time is faster than server by 5 seconds (unlikely)
+
+
+  2 passing (2m)
+  15 failing
+
+  1) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-2 : • at startDateTime of the first period – open / next:
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:
+
+`<button type="button" class="ecors-button-declare w-25 inline-flex items-center justify-center rounded-full bg-sky-900 px-5 py-2 text-sm font-semibold text-white shadow-sm transition disabled:cursor-not-allowed disabled:bg-slate-300 hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-white" disabled="">Declare</button>`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at Object.isNotDisabled (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152632:58)
+      at runAllChecks (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115140:26)
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115229:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+  From Your Spec Code:
+      at Context.eval (webpack:///./cypress/support/commands.js:97:6)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:121881:17)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.shouldFnWithCallback (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:121878:66)
+      at Context.shouldFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:121921:37)
+      at Context.should (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122040:23)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:150752:39)
+
+  2) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-3 : • five second before endDateTime of the first period – open / next:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Not Declared'
+      +'Declared BE - Backend Developer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/1_tc-pbi11.cy.js:207:13)
+
+  3) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-4 : • one second after endDateTime of the first period – closed / next:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Not Declared'
+      +'Cancelled BE - Backend Developer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/1_tc-pbi11.cy.js:280:13)
+
+  4) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-5 : • In the middle of second period – open / none:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Not Declared'
+      +'Cancelled BE - Backend Developer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/1_tc-pbi11.cy.js:315:13)
+
+  5) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-6 : • one second after endDateTime of the second period – closed / none:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Not Declared'
+      +'Declared FS - Full-Stack Developer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/1_tc-pbi11.cy.js:373:13)
+
+  6) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-7 : • after endDate of 2025S1 but before startDate of 2025S2 – closed / next:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Not Declared'
+      +'Declared FS - Full-Stack Developer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/1_tc-pbi11.cy.js:408:13)
+
+  7) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-8 : • at startDateTime of 2025S2 – closed / next:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Not Declared'
+      +'Declared FS - Full-Stack Developer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/1_tc-pbi11.cy.js:443:13)
+
+  8) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-9 : error
+                • Perform action after the reservation period is closed
+                • Declare – failed:
+     AssertionError: Timed out retrying after 4000ms: Declaration should be blocked on the FE side: expected [ Array(1) ] to have a length of 0 but got 1
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/1_tc-pbi11.cy.js:496:13)
+
+  9) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-10 : error
+                • Perform action after the reservation period is closed
+                • Change – failed:
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:
+
+`<button type="button" class="ecors-button-change w-25 items-center justify-center rounded-full bg-blue-800 px-5 py-2 text-sm font-semibold text-white shadow-sm transition disabled:cursor-not-allowed disabled:bg-blue-200 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white pointer-coarse" disabled="" hidden="">Change</button>`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at Object.isNotDisabled (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152632:58)
+      at runAllChecks (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115140:26)
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115229:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+  From Your Spec Code:
+      at Context.eval (webpack:///./cypress/support/commands.js:212:4)
+      at getRet (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122460:20)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.thenFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122471:66)
+      at Context.then (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122722:21)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145818:19)
+
+  10) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-11 : error
+                • Perform action after the reservation period is closed
+                • Cancel – failed:
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:
+
+`<button type="button" class="ecors-button-cancel w-25 items-center justify-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-white shadow-sm transition disabled:cursor-not-allowed disabled:bg-amber-200 hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-white" hidden="">Cancel</button>`
+
+This element `<button.ecors-button-cancel.w-25.items-center.justify-center.rounded-full.bg-amber-400.px-5.py-2.text-sm.font-semibold.text-white.shadow-sm.transition.disabled:cursor-not-allowed.disabled:bg-amber-200.hover:bg-amber-800.focus:outline-none.focus:ring-2.focus:ring-amber-500.focus:ring-offset-2.focus:ring-offset-white>` is not visible because it has CSS property: `display: none`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at runVisibilityCheck (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152666:58)
+      at Object.isStrictlyVisible (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152680:10)
+      at runAllChecks (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115161:26)
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115229:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+  From Your Spec Code:
+      at Context.eval (webpack:///./cypress/support/commands.js:212:4)
+      at getRet (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122460:20)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.thenFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122471:66)
+      at Context.then (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122722:21)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145818:19)
+
+  11) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-12 : • Client time is slower than server by 5 seconds
+                      • Declare – success
+                      • Change – success
+                      • Cancel – success:
+
+      AssertionError: expected 956261856 to be below 3300
+      + expected - actual
+
+      -956261856
+      +3300
+      
+      at Context.eval (webpack:///./cypress/support/utils.js:42:31)
+      at getRet (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122460:20)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.thenFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122471:66)
+      at Context.then (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122722:21)
+
+  12) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-13 : error
+                       • Client time is slower than server by 5 seconds
+                       • Declare – failed:
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:
+
+`<button type="button" class="ecors-button-cancel w-full border-2 rounded-lg mt-3 cursor-pointer hidden">Cancel ...</button>`
+
+This element `<button.ecors-button-cancel.w-full.border-2.rounded-lg.mt-3.cursor-pointer.hidden>` is not visible because it has CSS property: `display: none`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at runVisibilityCheck (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152666:58)
+      at Object.isStrictlyVisible (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152680:10)
+      at runAllChecks (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115161:26)
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115229:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+
+  13) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-14 : error
+                            • Client time is slower than server by 5 seconds
+                            • Change – failed:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Not Declared'
+      +'Declared FS - Full-Stack Developer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/1_tc-pbi11.cy.js:879:11)
+
+  14) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-15 : error
+                            • Client time is slower than server by 5 seconds
+                            • Cancel – failed:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Not Declared'
+      +'Declared FS - Full-Stack Developer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/1_tc-pbi11.cy.js:959:11)
+
+  15) PBI11 : RESTRICT-RESERVATION-PERIOD
+       TC-PBI11-16 : error
+                        • Client time is faster than server by 5 seconds (unlikely):
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Not Declared'
+      +'Declared FS - Full-Stack Developer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/1_tc-pbi11.cy.js:1031:13)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        17                                                                               │
+  │ Passing:      2                                                                                │
+  │ Failing:      15                                                                               │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  15                                                                               │
+  │ Video:        false                                                                            │
+  │ Duration:     1 minute, 35 seconds                                                             │
+  │ Spec Ran:     sprint-4/1_tc-pbi11.cy.js                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-2  • at startDateTi               
+     me of the first period – open  next (failed).png                                               
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-3  • five second be               
+     fore endDateTime of the first period – open  next (failed).png                                 
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-4  • one second aft               
+     er endDateTime of the first period – closed  next (failed).png                                 
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-5  • In the middle                
+     of second period – open  none (failed).png                                                     
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-6  • one second aft               
+     er endDateTime of the second period – closed  none (failed).png                                
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-7  • after endDate                
+     of 2025S1 but before startDate of 2025S2 – closed  next (failed).png                           
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-8  • at startDateTi               
+     me of 2025S2 – closed  next (failed).png                                                       
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-9  error                          
+          • Perform action after the reservation period is closed                • De               
+     clare – failed (failed).png                                                                    
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-10  error                         
+           • Perform action after the reservation period is closed                • C               
+     hange – failed (failed).png                                                                    
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-11  error                         
+           • Perform action after the reservation period is closed                • C               
+     ancel – failed (failed).png                                                                    
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-12  • Client time i               
+     s slower than server by 5 seconds                      • Declare – success                     
+                     • Change – success                      • Cancel – success (fail               
+     ed).png                                                                                        
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-13  error                         
+                  • Client time is slower than server by 5 seconds                                  
+         • Declare – failed (failed).png                                                            
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-14  error                         
+                       • Client time is slower than server by 5 seconds                             
+                   • Change – failed (failed).png                                                   
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-15  error                         
+                       • Client time is slower than server by 5 seconds                             
+                   • Cancel – failed (failed).png                                                   
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\1_t     (1280x720)
+     c-pbi11.cy.js\PBI11  RESTRICT-RESERVATION-PERIOD -- TC-PBI11-16  error                         
+                   • Client time is faster than server by 5 seconds (unlikely) (faile               
+     d).png                                                                                         
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-4/2_tc-pbi9.cy.js                                                       (5 of 17)
+
+
+  PBI9 : RESERVE-COURSES
+    √ Pre-condition: Must be itb-ecors public URL (840ms)
+    1) TC-PBI9-1 : • no reservations / has declared plan
+    2) TC-PBI9-2 : • with reservations and plan declaration
+    3) TC-PBI9-3 : • no reservations / no plan declaration
+                    • core courses section / highlight change with declared plan change
+                    • reserved course / buttons behavior
+    4) TC-PBI9-4 : • Perform action after the reservation period is closed 
+                    • Reserve – failed
+    5) TC-PBI9-5 : • with reservations / cancelled plan declaration
+                    • reserved course / buttons behavior
+    6) TC-PBI9-6 : • at startDateTime of 2025S2
+    7) TC-PBI9-7 : 409 errors on course reservation
+    8) TC-PBI9-8 : • Client time is slower than server by 5 seconds
+                    • Reserve – failed
+
+
+  1 passing (50s)
+  8 failing
+
+  1) PBI9 : RESERVE-COURSES
+       TC-PBI9-1 : • no reservations / has declared plan:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy=core-courses-header]`, but never found it.
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/2_tc-pbi9.cy.js:120:43)
+
+  2) PBI9 : RESERVE-COURSES
+       TC-PBI9-2 : • with reservations and plan declaration:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy=core-courses-header]`, but never found it.
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/2_tc-pbi9.cy.js:236:43)
+
+  3) PBI9 : RESERVE-COURSES
+       TC-PBI9-3 : • no reservations / no plan declaration
+                    • core courses section / highlight change with declared plan change
+                    • reserved course / buttons behavior:
+     AssertionError: expected '' to satisfy [Function]
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/2_tc-pbi9.cy.js:363:28)
+      at getRet (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122460:20)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.thenFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122471:66)
+      at Context.then (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122722:21)
+
+  4) PBI9 : RESERVE-COURSES
+       TC-PBI9-4 : • Perform action after the reservation period is closed 
+                    • Reserve – failed:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy~=course-offering]`, but never found it.
+      at Context.eval (webpack:///./cypress/support/commands.js:35:12)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145810:43)
+
+  5) PBI9 : RESERVE-COURSES
+       TC-PBI9-5 : • with reservations / cancelled plan declaration
+                    • reserved course / buttons behavior:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Not Declared'
+      +'Cancelled BE - Backend Developer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/2_tc-pbi9.cy.js:653:13)
+
+  6) PBI9 : RESERVE-COURSES
+       TC-PBI9-6 : • at startDateTime of 2025S2:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy=course-code]`, but never found it.
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/2_tc-pbi9.cy.js:814:35)
+
+  7) PBI9 : RESERVE-COURSES
+       TC-PBI9-7 : 409 errors on course reservation:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy~=course-offering]`, but never found it.
+      at Context.eval (webpack:///./cypress/support/commands.js:35:12)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145810:43)
+
+  8) PBI9 : RESERVE-COURSES
+       TC-PBI9-8 : • Client time is slower than server by 5 seconds
+                    • Reserve – failed:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy~=course-offering]`, but never found it.
+      at Context.eval (webpack:///./cypress/support/commands.js:35:12)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145810:43)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        9                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      8                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  8                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     50 seconds                                                                       │
+  │ Spec Ran:     sprint-4/2_tc-pbi9.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\2_t     (1280x720)
+     c-pbi9.cy.js\PBI9  RESERVE-COURSES -- TC-PBI9-1  • no reservations  has declared               
+      plan (failed).png                                                                             
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\2_t     (1280x720)
+     c-pbi9.cy.js\PBI9  RESERVE-COURSES -- TC-PBI9-2  • with reservations and plan de               
+     claration (failed).png                                                                         
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\2_t     (1280x720)
+     c-pbi9.cy.js\PBI9  RESERVE-COURSES -- TC-PBI9-3  • no reservations  no plan decl               
+     aration                    • core courses section  highlight change with declare               
+     d plan change                    • reserved course  buttons behavior (failed).pn               
+     g                                                                                              
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\2_t     (1280x720)
+     c-pbi9.cy.js\PBI9  RESERVE-COURSES -- TC-PBI9-4  • Perform action after the rese               
+     rvation period is closed                     • Reserve – failed (failed).png                   
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\2_t     (1280x720)
+     c-pbi9.cy.js\PBI9  RESERVE-COURSES -- TC-PBI9-5  • with reservations  cancelled                
+     plan declaration                    • reserved course  buttons behavior (failed)               
+     .png                                                                                           
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\2_t     (1280x720)
+     c-pbi9.cy.js\PBI9  RESERVE-COURSES -- TC-PBI9-6  • at startDateTime of 2025S2 (f               
+     ailed).png                                                                                     
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\2_t     (1280x720)
+     c-pbi9.cy.js\PBI9  RESERVE-COURSES -- TC-PBI9-7  409 errors on course reservatio               
+     n (failed).png                                                                                 
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\2_t     (1280x720)
+     c-pbi9.cy.js\PBI9  RESERVE-COURSES -- TC-PBI9-8  • Client time is slower than se               
+     rver by 5 seconds                    • Reserve – failed (failed).png                           
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-4/3_tc-pbi10.cy.js                                                      (6 of 17)
+
+
+  PBI10 : CHANGE-RESERVED-COURSES
+    √ Pre-condition: Must be itb-ecors public URL (653ms)
+    1) TC-PBI10-1 : • cancel removal – success
+    2) TC-PBI10-2 : • remove 1 credit course – success
+    3) TC-PBI10-3 : • remove remaining courses – success
+    4) TC-PBI10-4 : Handles 404 errors on remove course reservation
+    √ TC-PBI10-5 : • no 'Reserve' or 'Remove' buttons during 'Inactive' period (823ms)
+    5) TC-PBI10-6 : • Perform action after the reservation period is closed 
+                          • Remove – failed
+    6) TC-PBI10-7 : • Handles COURSE_NOT_OFFERRED_IN_PERIOD error on Remove
+
+
+  2 passing (43s)
+  6 failing
+
+  1) PBI10 : CHANGE-RESERVED-COURSES
+       TC-PBI10-1 : • cancel removal – success:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy~=course-offering]`, but never found it.
+      at Context.eval (webpack:///./cypress/support/commands.js:35:12)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145810:43)
+
+  2) PBI10 : CHANGE-RESERVED-COURSES
+       TC-PBI10-2 : • remove 1 credit course – success:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'INT290 Advanced SQL (1 credit)'
+      +'INT290 Advanced SQL (1 credits)'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/3_tc-pbi10.cy.js:223:25)
+      at Context.callback (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122695:26)
+      at getRet (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122460:20)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at thenFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122471:66)
+      at yieldItem (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122703:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Object.gotValue (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:6446:18)
+
+  3) PBI10 : CHANGE-RESERVED-COURSES
+       TC-PBI10-3 : • remove remaining courses – success:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Total Credits Reserved: 11 / 12'
+      +'Total Credits Reserved: 10 / 12'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/3_tc-pbi10.cy.js:331:13)
+
+  4) PBI10 : CHANGE-RESERVED-COURSES
+       TC-PBI10-4 : Handles 404 errors on remove course reservation:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy=button-reserve]`, but never found it.
+      at Context.eval (webpack:///./cypress/e2e/sprint-4/3_tc-pbi10.cy.js:440:38)
+
+  5) PBI10 : CHANGE-RESERVED-COURSES
+       TC-PBI10-6 : • Perform action after the reservation period is closed 
+                          • Remove – failed:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy~=course-offering]`, but never found it.
+      at Context.eval (webpack:///./cypress/support/commands.js:35:12)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145810:43)
+
+  6) PBI10 : CHANGE-RESERVED-COURSES
+       TC-PBI10-7 : • Handles COURSE_NOT_OFFERRED_IN_PERIOD error on Remove:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-cy~=course-offering]`, but never found it.
+      at Context.eval (webpack:///./cypress/support/commands.js:35:12)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145810:43)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        8                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      6                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  6                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     43 seconds                                                                       │
+  │ Spec Ran:     sprint-4/3_tc-pbi10.cy.js                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\3_t     (1280x720)
+     c-pbi10.cy.js\PBI10  CHANGE-RESERVED-COURSES -- TC-PBI10-1  • cancel removal – s               
+     uccess (failed).png                                                                            
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\3_t     (1280x720)
+     c-pbi10.cy.js\PBI10  CHANGE-RESERVED-COURSES -- TC-PBI10-2  • remove 1 credit co               
+     urse – success (failed).png                                                                    
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\3_t     (1280x720)
+     c-pbi10.cy.js\PBI10  CHANGE-RESERVED-COURSES -- TC-PBI10-3  • remove remaining c               
+     ourses – success (failed).png                                                                  
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\3_t     (1280x720)
+     c-pbi10.cy.js\PBI10  CHANGE-RESERVED-COURSES -- TC-PBI10-4  Handles 404 errors o               
+     n remove course reservation (failed).png                                                       
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\3_t     (1280x720)
+     c-pbi10.cy.js\PBI10  CHANGE-RESERVED-COURSES -- TC-PBI10-6  • Perform action aft               
+     er the reservation period is closed                           • Remove – failed                
+     (failed).png                                                                                   
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-4\3_t     (1280x720)
+     c-pbi10.cy.js\PBI10  CHANGE-RESERVED-COURSES -- TC-PBI10-7  • Handles COURSE_NOT               
+     _OFFERRED_IN_PERIOD error on Remove (failed).png                                               
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-2/tc-pbi2-1.cy.js                                                       (7 of 17)
+
+
+  TC-PBI2-1 : SIGN-IN-AND-OUT-WITH-EXTERNAL-SERVICE
+          normal : - successful sign-in
+                   - SSO
+                   - successful sign-out
+    √ [step 1] The page should have the button 'Manage study plan declaration and course reservation'. (517ms)
+    √ [step 2] should click the button "Manage ...". FE should redirect to ./reserve.html, which then redirect automatically to ITB-ECoRS Authentication System. (911ms)
+    √ [step 3] should fill in valid credentials and be able to sign in successfully.
+
+        should show the fullname and the button 'Sign Out'. (2461ms)
+    √ [step 4] should visit the page reserve.html without signing in again. (865ms)
+    1) [step 5 and 6] should sign out successfully when clicking the 'Sign Out' button.
+        FE should redirect to home page with study plan table.
+        Should force the user to authenticate again when accessing reserve.html after sign out
+
+
+  4 passing (14s)
+  1 failing
+
+  1) TC-PBI2-1 : SIGN-IN-AND-OUT-WITH-EXTERNAL-SERVICE
+          normal : - successful sign-in
+                   - SSO
+                   - successful sign-out
+       [step 5 and 6] should sign out successfully when clicking the 'Sign Out' button.
+        FE should redirect to home page with study plan table.
+        Should force the user to authenticate again when accessing reserve.html after sign out:
+     AssertionError: Timed out retrying after 4000ms: expected 'https://bscit.sit.kmutt.ac.th/intproj25/kk2/itb-ecors/reserve.html' to match /\/itb-ecors(\/|\/index\.html)?$/
+      at Context.eval (webpack:///./cypress/e2e/sprint-2/tc-pbi2-1.cy.js:86:17)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        5                                                                                │
+  │ Passing:      4                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     14 seconds                                                                       │
+  │ Spec Ran:     sprint-2/tc-pbi2-1.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-2\tc-     (1280x720)
+     pbi2-1.cy.js\TC-PBI2-1  SIGN-IN-AND-OUT-WITH-EXTERNAL-SERVICE          normal  -               
+      successful sign-in                   - SSO                   - successful sign-               
+     out -- [step 5 and 6] should sign out successfully when clicking the 'Sign Out'                
+     button.        FE shoul.png                                                                    
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-2/tc-pbi3-1.cy.js                                                       (8 of 17)
+
+
+  TC-PBI3-1 : VIEW-DECLARED PLAN
+
+          normal : - has declaration
+
+                   - use local timestamp
+    √ [step 1–2] - should visit /reserve.html successfully after signing in.
+        should show the fullname "Somchai Jaidee" and should display 
+        "'Declaration Status: Declared FS - Full-Stack Developer plan on 11/11/2025, 00:18:19 (Asia/Bangkok)". (2993ms)
+    √ [step 3 and 4] show display "Declaration Status: Declared FS - Full-Stack Developer plan on 10/11/2025, 17:18:19 (Europe/London)"
+
+         when changing the brower's location to "London".
+         Set the browser's location back to "Asia/Bangkok". (714ms)
+
+
+  2 passing (8s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     sprint-2/tc-pbi3-1.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-2/tc-pbi3-2.cy.js                                                       (9 of 17)
+
+
+  TC-PBI3-2 : VIEW-DECLARED PLAN
+
+          normal : - no declaration
+    √ [step 1] should visit /reserve.html successfully after signing in.
+ (1058ms)
+    √ [step 2] should show the fullname "Somyot Meedee" and 
+
+        should display "'Declaration Status: Not Declared". (2487ms)
+
+
+  2 passing (7s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     sprint-2/tc-pbi3-2.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-2/tc-pbi4-1.cy.js                                                      (10 of 17)
+
+
+  TC-PBI4-1 : DECLARE-PLAN
+
+          normal : - test 'Declare' button enable/disable logic
+    √ [step 1] should have a dropdown to select a study plan and should show drop-down list with 9 study plans.
+
+        should not select any plan by default.
+
+        should disable the 'Declare' button by default. (3352ms)
+    √ [step 2 and 3] should select a 'UX - UX/UI Designer' from the dropdown and enable the 'Declare' button.
+        When un-select, should disable the 'Declare' button. (1065ms)
+
+
+  2 passing (8s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     sprint-2/tc-pbi4-1.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-2/tc-pbi4-2.cy.js                                                      (11 of 17)
+
+
+  TC-PBI4-2 : DECLARE-PLAN
+
+          normal : - successful declare
+    1) [step 1–3] should successfully declare a study plan 
+        , update the status display correctly after declaration,
+        and show the same status display after reload
+
+
+  0 passing (8s)
+  1 failing
+
+  1) TC-PBI4-2 : DECLARE-PLAN
+
+          normal : - successful declare
+       [step 1–3] should successfully declare a study plan 
+        , update the status display correctly after declaration,
+        and show the same status display after reload:
+
+      AssertionError: expected 682852785 to be below 3300
+      + expected - actual
+
+      -682852785
+      +3300
+      
+      at Context.eval (webpack:///./cypress/support/utils.js:42:31)
+      at getRet (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122460:20)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.thenFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122471:66)
+      at Context.then (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122722:21)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     8 seconds                                                                        │
+  │ Spec Ran:     sprint-2/tc-pbi4-2.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-2\tc-     (1280x720)
+     pbi4-2.cy.js\TC-PBI4-2  DECLARE-PLAN          normal  - successful declare -- [s               
+     tep 1–3] should successfully declare a study plan         , update the status di               
+     splay correctly after declaration,        and show the same status display after               
+      reload (failed).png                                                                           
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-2/tc-pbi4-3.cy.js                                                      (12 of 17)
+
+
+  TC-PBI4-3 : DECLARE-PLAN
+
+          normal : - declare twice using two browser tabs
+    1) Should handle 409 Conflict correctly by showing alert/dialog 
+        and updating the declaration status automatically. 
+        Hide the 'Declare' button when status is declared.
+
+
+  0 passing (8s)
+  1 failing
+
+  1) TC-PBI4-3 : DECLARE-PLAN
+
+          normal : - declare twice using two browser tabs
+       Should handle 409 Conflict correctly by showing alert/dialog 
+        and updating the declaration status automatically. 
+        Hide the 'Declare' button when status is declared.:
+
+      AssertionError: expected 682864543 to be below 3300
+      + expected - actual
+
+      -682864543
+      +3300
+      
+      at Context.eval (webpack:///./cypress/support/utils.js:42:31)
+      at getRet (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122460:20)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.thenFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122471:66)
+      at Context.then (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122722:21)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     sprint-2/tc-pbi4-3.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-2\tc-     (1280x720)
+     pbi4-3.cy.js\TC-PBI4-3  DECLARE-PLAN          normal  - declare twice using two                
+     browser tabs -- Should handle 409 Conflict correctly by showing alertdialog                    
+         and updating the declaration status automatically.         Hide the 'Declare               
+     ' button when status is.png                                                                    
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-2/tc-pbi4-4.cy.js                                                      (13 of 17)
+
+
+  TC-PBI4-4 : DECLARE-PLAN - error case (500 and 502)
+    1) [step 1–5] Should handle 500 Internal Server Error correctly 
+        by showing alert/dialog that can be dismissed.
+    2) [step 6–8] Should handle Network Error correctly 
+        by showing alert/dialog that can be dismissed.
+
+
+  0 passing (17s)
+  2 failing
+
+  1) TC-PBI4-4 : DECLARE-PLAN - error case (500 and 502)
+       [step 1–5] Should handle 500 Internal Server Error correctly 
+        by showing alert/dialog that can be dismissed.:
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:
+
+`<button type="button" class="ecors-button-declare w-25 inline-flex items-center justify-center rounded-full bg-sky-900 px-5 py-2 text-sm font-semibold text-white shadow-sm transition disabled:cursor-not-allowed disabled:bg-slate-300 hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-white" disabled="">Declare</button>`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at Object.isNotDisabled (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152632:58)
+      at runAllChecks (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115140:26)
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115229:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+
+  2) TC-PBI4-4 : DECLARE-PLAN - error case (500 and 502)
+       [step 6–8] Should handle Network Error correctly 
+        by showing alert/dialog that can be dismissed.:
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:
+
+`<button type="button" class="ecors-button-declare w-25 inline-flex items-center justify-center rounded-full bg-sky-900 px-5 py-2 text-sm font-semibold text-white shadow-sm transition disabled:cursor-not-allowed disabled:bg-slate-300 hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-white" disabled="">Declare</button>`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at Object.isNotDisabled (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152632:58)
+      at runAllChecks (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115140:26)
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115229:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+  From Your Spec Code:
+      at Context.eval (webpack:///./cypress/support/commands.js:212:4)
+      at getRet (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122460:20)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.thenFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122471:66)
+      at Context.then (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122722:21)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145818:19)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      2                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  2                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     16 seconds                                                                       │
+  │ Spec Ran:     sprint-2/tc-pbi4-4.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-2\tc-     (1280x720)
+     pbi4-4.cy.js\TC-PBI4-4  DECLARE-PLAN - error case (500 and 502) -- [step 1–5] Sh               
+     ould handle 500 Internal Server Error correctly         by showing alertdialog t               
+     hat can be dismissed (failed).png                                                              
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-2\tc-     (1280x720)
+     pbi4-4.cy.js\TC-PBI4-4  DECLARE-PLAN - error case (500 and 502) -- [step 6–8] Sh               
+     ould handle Network Error correctly         by showing alertdialog that can be d               
+     ismissed (failed).png                                                                          
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-3/tc-pbi5.cy.js                                                        (14 of 17)
+
+
+  TC-PBI5 : CHANGE-PLAN
+    √ Pre-condition: Must be itb-ecors public URL (730ms)
+    1) TC-PBI5-1 : 'Change' button – behavior
+    2) TC-PBI5-2 : Change plan twice – success
+    3) TC-PBI5-3 : Handle 404 Not Found when changing plan
+    4) TC-PBI5-4 : error case (500 and 502)
+
+
+  1 passing (24s)
+  4 failing
+
+  1) TC-PBI5 : CHANGE-PLAN
+       TC-PBI5-1 : 'Change' button – behavior:
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is `disabled`:
+
+`<button type="button" class="ecors-button-declare w-25 inline-flex items-center justify-center rounded-full bg-sky-900 px-5 py-2 text-sm font-semibold text-white shadow-sm transition disabled:cursor-not-allowed disabled:bg-slate-300 hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-white" disabled="">Declare</button>`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at Object.isNotDisabled (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152632:58)
+      at runAllChecks (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115140:26)
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115229:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+  From Your Spec Code:
+      at Context.eval (webpack:///./cypress/support/commands.js:97:6)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:121881:17)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.shouldFnWithCallback (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:121878:66)
+      at Context.shouldFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:121921:37)
+      at Context.should (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122040:23)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:150752:39)
+
+  2) TC-PBI5 : CHANGE-PLAN
+       TC-PBI5-2 : Change plan twice – success:
+     AssertionError: Timed out retrying after 500ms: .ecors-button-change should be visible AND clickable: expected false to be true
+      at Object.proxyGetter [as get] (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:80772:22)
+      at Context.eval (webpack:///./cypress/support/commands.js:153:12)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:121881:17)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+
+  3) TC-PBI5 : CHANGE-PLAN
+       TC-PBI5-3 : Handle 404 Not Found when changing plan:
+     AssertionError: Timed out retrying after 500ms: .ecors-button-change should be visible AND clickable: expected false to be true
+      at Object.proxyGetter [as get] (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:80772:22)
+      at Context.eval (webpack:///./cypress/support/commands.js:153:12)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:121881:17)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+
+  4) TC-PBI5 : CHANGE-PLAN
+       TC-PBI5-4 : error case (500 and 502):
+     AssertionError: Timed out retrying after 500ms: .ecors-button-change should be visible AND clickable: expected false to be true
+      at Object.proxyGetter [as get] (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:80772:22)
+      at Context.eval (webpack:///./cypress/support/commands.js:153:12)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:121881:17)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        5                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      4                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  4                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     23 seconds                                                                       │
+  │ Spec Ran:     sprint-3/tc-pbi5.cy.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi5.cy.js\TC-PBI5  CHANGE-PLAN -- TC-PBI5-1  'Change' button – behavior (failed               
+     ).png                                                                                          
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi5.cy.js\TC-PBI5  CHANGE-PLAN -- TC-PBI5-2  Change plan twice – success (faile               
+     d).png                                                                                         
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi5.cy.js\TC-PBI5  CHANGE-PLAN -- TC-PBI5-3  Handle 404 Not Found when changing               
+      plan (failed).png                                                                             
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi5.cy.js\TC-PBI5  CHANGE-PLAN -- TC-PBI5-4  error case (500 and 502) (failed).               
+     png                                                                                            
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-3/tc-pbi6.cy.js                                                        (15 of 17)
+
+
+  TC-PBI6 : CANCEL-PLAN
+    √ Pre-condition: Must be itb-ecors public URL (729ms)
+    1) TC-PBI6-1 : normal
+        • Cancel Declaration button – behavior
+        • Cancellation dialog – behavior
+        • Cancel declaration – success
+    √ TC-PBI6-2 : Handle 404 Not Found when cancel plan (3149ms)
+    2) TC-PBI6-3 : error case (500 and 502)
+
+
+  2 passing (28s)
+  2 failing
+
+  1) TC-PBI6 : CANCEL-PLAN
+       TC-PBI6-1 : normal
+        • Cancel Declaration button – behavior
+        • Cancellation dialog – behavior
+        • Cancel declaration – success:
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the page updated while this command was executing. Cypress tried to locate elements based on this query:
+
+> <button.ecors-button-cancel.w-full.border-2.rounded-lg.mt-3.cursor-pointer>
+
+We initially found matching element(s), but while waiting for them to become actionable, they disappeared from the page. Common situations why this happens:
+  - Your JS framework re-rendered asynchronously
+  - Your app code reacted to an event firing and removed the element
+
+You can typically solve this by breaking up a chain. For example, rewrite:
+
+> `cy.get('button').click().click()`
+
+to
+
+> `cy.get('button').as('btn').click()`
+> `cy.get('@btn').click()`
+
+https://on.cypress.io/element-has-detached-from-dom
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115221:74)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+
+  2) TC-PBI6 : CANCEL-PLAN
+       TC-PBI6-3 : error case (500 and 502):
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:
+
+`<button type="button" class="ecors-button-cancel w-full border-2 rounded-lg mt-3 cursor-pointer hidden">Cancel ...</button>`
+
+This element `<button.ecors-button-cancel.w-full.border-2.rounded-lg.mt-3.cursor-pointer.hidden>` is not visible because it has CSS property: `display: none`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at runVisibilityCheck (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152666:58)
+      at Object.isStrictlyVisible (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152680:10)
+      at runAllChecks (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115161:26)
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115229:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        4                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      2                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  2                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     27 seconds                                                                       │
+  │ Spec Ran:     sprint-3/tc-pbi6.cy.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi6.cy.js\TC-PBI6  CANCEL-PLAN -- TC-PBI6-1  normal        • Cancel Declaration               
+      button – behavior        • Cancellation dialog – behavior        • Cancel decla               
+     ration – success (failed).png                                                                  
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi6.cy.js\TC-PBI6  CANCEL-PLAN -- TC-PBI6-3  error case (500 and 502) (failed).               
+     png                                                                                            
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-3/tc-pbi7.cy.js                                                        (16 of 17)
+
+
+  TC-PBI7 : SHOW-LAST-PLAN-CANCELLATION
+    √ Pre-condition: Must be itb-ecors public URL (1179ms)
+    1) TC-PBI7-1 : normal
+        • Cancel Declaration button – behavior
+        • Cancellation dialog – behavior
+        • Cancel declaration – success
+    2) TC-PBI7-2 : Handles 409 error when cancel plan
+    3) TC-PBI7-3 : Handles 409 error when change plan
+    4) TC-PBI7-4 : normal • Declaration section – behavior • Declare plan again – success
+    √ TC-PBI7-5 : Handle 404 Not Found when cancel plan (3384ms)
+    5) TC-PBI7-6 : error case (500 and 502)
+
+
+  2 passing (39s)
+  5 failing
+
+  1) TC-PBI7 : SHOW-LAST-PLAN-CANCELLATION
+       TC-PBI7-1 : normal
+        • Cancel Declaration button – behavior
+        • Cancellation dialog – behavior
+        • Cancel declaration – success:
+     AssertionError: Timed out retrying after 4000ms: expected '<dialog.ecors-dialog.fixed.left-1/2.top-1/2.-translate-x-1/2.-translate-y-1/2.bg-white.border-2.border-red-600.p-5.z-[9999]>' to be 'visible'
+
+This element `<dialog.ecors-dialog.fixed.left-1/2.top-1/2.-translate-x-1/2.-translate-y-1/2.bg-white.border-2.border-red-600.p-5.z-[9999]>` is not visible because it has CSS property: `display: none`
+      at Context.eval (webpack:///./cypress/support/commands.js:162:5)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145810:43)
+
+  2) TC-PBI7 : SHOW-LAST-PLAN-CANCELLATION
+       TC-PBI7-2 : Handles 409 error when cancel plan:
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:
+
+`<button type="button" class="ecors-button-cancel w-full border-2 rounded-lg mt-3 cursor-pointer hidden">Cancel ...</button>`
+
+This element `<button.ecors-button-cancel.w-full.border-2.rounded-lg.mt-3.cursor-pointer.hidden>` is not visible because it has CSS property: `display: none`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at runVisibilityCheck (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152666:58)
+      at Object.isStrictlyVisible (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152680:10)
+      at runAllChecks (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115161:26)
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115229:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+  From Your Spec Code:
+      at Context.eval (webpack:///./cypress/support/commands.js:212:4)
+      at getRet (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122460:20)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.thenFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122471:66)
+      at Context.then (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122722:21)
+      at wrapped (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:145818:19)
+
+  3) TC-PBI7 : SHOW-LAST-PLAN-CANCELLATION
+       TC-PBI7-3 : Handles 409 error when change plan:
+
+      AssertionError: expected 200 to equal 409
+      + expected - actual
+
+      -200
+      +409
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-3/tc-pbi7.cy.js:277:43)
+      at getRet (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122460:20)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at Context.thenFn (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122471:66)
+      at Context.then (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:122722:21)
+
+  4) TC-PBI7 : SHOW-LAST-PLAN-CANCELLATION
+       TC-PBI7-4 : normal • Declaration section – behavior • Declare plan again – success:
+     AssertionError: Timed out retrying after 500ms: .ecors-button-declare should be visible AND clickable: expected false to be true
+      at Object.proxyGetter [as get] (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:80772:22)
+      at Context.eval (webpack:///./cypress/support/commands.js:153:12)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:121881:17)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+
+  5) TC-PBI7 : SHOW-LAST-PLAN-CANCELLATION
+       TC-PBI7-6 : error case (500 and 502):
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:
+
+`<button type="button" class="ecors-button-cancel w-full border-2 rounded-lg mt-3 cursor-pointer hidden">Cancel ...</button>`
+
+This element `<button.ecors-button-cancel.w-full.border-2.rounded-lg.mt-3.cursor-pointer.hidden>` is not visible because it has CSS property: `display: none`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at runVisibilityCheck (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152666:58)
+      at Object.isStrictlyVisible (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:152680:10)
+      at runAllChecks (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115161:26)
+      at retryActionability (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:115229:16)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise.attempt.Promise.try (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:4285:29)
+      at whenStable (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151493:68)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:151434:14)
+      at tryCatcher (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1777:23)
+      at Promise._settlePromiseFromHandler (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1489:31)
+      at Promise._settlePromise (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1546:18)
+      at Promise._settlePromise0 (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1591:10)
+      at Promise._settlePromises (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1671:18)
+      at Promise._fulfill (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:1615:18)
+      at <unknown> (https://bscit.sit.kmutt.ac.th/__cypress/runner/cypress_runner.js:5420:46)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        7                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      5                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  5                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     38 seconds                                                                       │
+  │ Spec Ran:     sprint-3/tc-pbi7.cy.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi7.cy.js\TC-PBI7  SHOW-LAST-PLAN-CANCELLATION -- TC-PBI7-1  normal        • Ca               
+     ncel Declaration button – behavior        • Cancellation dialog – behavior                     
+       • Cancel declaration – success (failed).png                                                  
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi7.cy.js\TC-PBI7  SHOW-LAST-PLAN-CANCELLATION -- TC-PBI7-2  Handles 409 error                
+     when cancel plan (failed).png                                                                  
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi7.cy.js\TC-PBI7  SHOW-LAST-PLAN-CANCELLATION -- TC-PBI7-3  Handles 409 error                
+     when change plan (failed).png                                                                  
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi7.cy.js\TC-PBI7  SHOW-LAST-PLAN-CANCELLATION -- TC-PBI7-4  normal • Declarati               
+     on section – behavior • Declare plan again – success (failed).png                              
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi7.cy.js\TC-PBI7  SHOW-LAST-PLAN-CANCELLATION -- TC-PBI7-6  error case (500 an               
+     d 502) (failed).png                                                                            
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  sprint-3/tc-pbi8.cy.js                                                        (17 of 17)
+
+
+  PBI8 : SECURE-CONNECTION'
+    √ Pre-condition: Must be itb-ecors public URL (840ms)
+    1) TC-PBI8-1 : SECURE-CONNECTION - Test CRUD operations over secure connection (HTTPS)
+
+
+  1 passing (16s)
+  1 failing
+
+  1) PBI8 : SECURE-CONNECTION'
+       TC-PBI8-1 : SECURE-CONNECTION - Test CRUD operations over secure connection (HTTPS):
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'Cancelled DS - Data Scientist on 27/11/2025, 17:59:55 (Asia/Bangkok)'
+      +'Declared UX - UX/UI Designer'
+      
+      at Context.eval (webpack:///./cypress/e2e/sprint-3/tc-pbi8.cy.js:96:13)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     15 seconds                                                                       │
+  │ Spec Ran:     sprint-3/tc-pbi8.cy.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\OngarjDev\Desktop\cypressEdition\3.9.0\cypress\screenshots\sprint-3\tc-     (1280x720)
+     pbi8.cy.js\PBI8  SECURE-CONNECTION' -- TC-PBI8-1  SECURE-CONNECTION - Test CRUD                
+     operations over secure connection (HTTPS) (failed).png                                         
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  sprint-1/tc-pbi1-1.cy.js                 00:05        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  sprint-1/tc-pbi1-2.cy.js                 00:05        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-1/tc-pbi1-3.cy.js                 00:18        3        -        3        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-4/1_tc-pbi11.cy.js                01:35       17        2       15        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-4/2_tc-pbi9.cy.js                 00:50        9        1        8        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-4/3_tc-pbi10.cy.js                00:43        8        2        6        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-2/tc-pbi2-1.cy.js                 00:14        5        4        1        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  sprint-2/tc-pbi3-1.cy.js                 00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  sprint-2/tc-pbi3-2.cy.js                 00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  sprint-2/tc-pbi4-1.cy.js                 00:07        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-2/tc-pbi4-2.cy.js                 00:08        1        -        1        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-2/tc-pbi4-3.cy.js                 00:07        1        -        1        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-2/tc-pbi4-4.cy.js                 00:16        2        -        2        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-3/tc-pbi5.cy.js                   00:23        5        1        4        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-3/tc-pbi6.cy.js                   00:27        4        2        2        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-3/tc-pbi7.cy.js                   00:38        7        2        5        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  sprint-3/tc-pbi8.cy.js                   00:15        2        1        1        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ×  12 of 17 failed (71%)                    06:34       74       25       49        -        -  
+
